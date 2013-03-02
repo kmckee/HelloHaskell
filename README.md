@@ -1,0 +1,4 @@
+HelloHaskell
+============
+
+Playing with haskell
