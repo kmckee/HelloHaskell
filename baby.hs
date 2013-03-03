@@ -10,12 +10,12 @@ thisIsADefinition = "Something"                           -- This is immutable, 
 alsoADefinition = 5 * 1000                                -- Func with no params is also a definition.  It's only eval'd once and the return cant change.
 myArray = [1,2,3,4]                                       -- Note that there are no spaces between items.
 woot = ['w','o'] ++ ['o','t']                             -- Strings are an array of chars
-test = 't':['e','s','t']                                  -- You can push strings onto head of array with :
+
+-- LISTS --
+--wontCompile = [1,'a',3]                                 -- Lists are homogenous.
+joiningLists = [1,2,3] ++ [4,5,6]                         -- ++ can be expensive depending on left list size.
+test = 't':['e','s','t']                                  -- You can push stuff onto head of array with :   this is cheap
 thisIsTrue = (1:2:3:[] == [1,2,3])                        -- The right side is actually syntax sugar for the left side.
 indexersWorkLikeThis = "Steve Buscemi" !! 6               -- Grab the sixth item in array
 five = [1,2,3,4,5] !! 4
-
-
--- LISTS --
-
 
