@@ -19,3 +19,18 @@ thisIsTrue = (1:2:3:[] == [1,2,3])                        -- The right side is a
 indexersWorkLikeThis = "Steve Buscemi" !! 6               -- Grab the sixth item in array
 five = [1,2,3,4,5] !! 4
 
+-- List functions --
+myList = [4,3,2,1]
+four = head myList
+one = last myList
+threeTwoOne = tail myList
+fourThreeTwo = init myList
+len = length myList
+true = null []                                            -- returns True if list is empty, instead of myList == []
+oneTwoThreeFour = reverse myList
+a = take 3 [5,4,3,2,1]                -- [5,4,3]  
+b = take 1 [3,9,3]                    -- [3]  
+c = take 5 [1,2]                      -- [1,2]  
+d = take 0 [6,6,6]                    -- []
+
+
